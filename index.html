@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scottie Brown - GIS & IoT Solutions</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Load Lucide icons (Corrected from lucide-react to lucide) -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <style>
+        /* Apply Inter font to the body */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple scroll-spy highlighting for navigation */
+        .nav-link.active {
+            font-weight: 600;
+            color: #2563eb; /* blue-600 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/75 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Name/Brand -->
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-gray-900">Scottie Brown</h1>
+                </div>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex md:space-x-8" id="nav-menu">
+                    <a href="#summary" class="nav-link text-gray-600 hover:text-blue-600 transition-colors duration-200">Summary</a>
+                    <a href="#skills" class="nav-link text-gray-600 hover:text-blue-600 transition-colors duration-200">Skills</a>
+                    <a href="#projects" class="nav-link text-gray-600 hover:text-blue-600 transition-colors duration-200">Projects</a>
+                    <a href="#experience" class="nav-link text-gray-600 hover:text-blue-600 transition-colors duration-200">Experience</a>
+                    <a href="#education" class="nav-link text-gray-600 hover:text-blue-600 transition-colors duration-200">Education</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Hero / Summary Section -->
+        <section id="summary" class="pt-16 -mt-16 mb-16">
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+                <div class="flex flex-col md:flex-row md:items-center">
+                    <!-- Left Column: Title & Objective -->
+                    <div class="flex-1 mb-6 md:mb-0 md:pr-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-2">Scottie Brown</h2>
+                        <p class="text-xl font-medium text-blue-600 mb-4">GIS Manager & IoT Solutions Founder</p>
+                        <p class="text-lg text-gray-700">
+                            To leverage extensive expertise in GIS management, IoT system development, and IT infrastructure to drive technological innovation, streamline operations, and achieve strategic organizational goals.
+                        </p>
+                    </div>
+                    <!-- Right Column: Contact Info -->
+                    <div class="flex-shrink-0 bg-gray-50 p-6 rounded-lg border border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Contact Information</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i data-lucide="mail" class="w-5 h-5 text-gray-500 mr-3"></i>
+                                <span classt="text-gray-700">scottiebrown@live.com</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="phone" class="w-5 h-5 text-gray-500 mr-3"></i>
+                                <span class="text-gray-700">242-422-1298</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-gray-500 mr-3"></i>
+                                <span class="text-gray-700">Blue Wave Estates</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Skills Section -->
+        <section id="skills" class="pt-16 -mt-16 mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">Core Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- GIS & Geospatial -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="flex items-center text-lg font-semibold text-gray-900 mb-3">
+                        <i data-lucide="map" class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"></i>
+                        <span>GIS & Geospatial Systems</span>
+                    </h3>
+                    <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700">
+                        <li>ArcGIS System Administration</li>
+                        <li>Enterprise Geodatabase Mgmt (SDE)</li>
+                        <li>ArcGIS Application Development</li>
+                        <li>GIS End-User Support & Training</li>
+                    </ul>
+                </div>
+                <!-- IoT & Network -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="flex items-center text-lg font-semibold text-gray-900 mb-3">
+                        <i data-lucide="wifi" class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"></i>
+                        <span>IoT & Network Infrastructure</span>
+                    </h3>
+                    <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700">
+                        <li>End-to-End IoT Solution Development</li>
+                        <li>LoRaWAN Network Deployment</li>
+                        <li>Wireless Network Planning</li>
+                    </ul>
+                </div>
+                <!-- IT & Hardware -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="flex items-center text-lg font-semibold text-gray-900 mb-3">
+                        <i data-lucide="hard-drive" class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"></i>
+                        <span>IT & Hardware Expertise</span>
+                    </h3>
+                    <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700">
+                        <li>Expert-Level Hardware Support</li>
+                        <li>Complex System Troubleshooting</li>
+                        <li>Hardware Protocols & Diagnostics</li>
+                    </ul>
+                </div>
+                <!-- Design & Drafting -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="flex items-center text-lg font-semibold text-gray-900 mb-3">
+                        <i data-lucide="pencil-ruler" class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"></i>
+                        <span>Design, Drafting & Modeling</span>
+                    </h3>
+                    <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700">
+                        <li>AutoCAD (2D & 3D)</li>
+                        <li>Utility (T&D) Drafting</li>
+                        <li>3D Modeling (Google SketchUp)</li>
+                        <li>Specialized Equipment Operation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="pt-16 -mt-16 mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">Featured Projects</h2>
+            
+            <!-- Project 1: NTech Ltd. -->
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Project: Founder & Innovator - NTech Ltd. (2019-Present)</h3>
+                <p class="text-lg text-gray-700 mb-6">
+                    Founded NTech Ltd., an innovative local technology company focused on advanced smart city solutions for water and electrical utility providers. Specialized in delivering end-to-end LoRaWAN systems for remote monitoring and control applications.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Key Achievements -->
+                    <div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3 border-l-4 border-blue-500 pl-3">Key Achievements & Milestones</h4>
+                        <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700">
+                            <li>Established NTech and transmitted the first LoRaWAN data packet in The Bahamas (2019).</li>
+                            <li>Developed and deployed the world's first fully automated LoRaWAN IoT lift station system (2025).</li>
+                            <li>Formed strategic partnerships with Helium Inc. and a local telecom to expand network coverage.</li>
+                            <li>Expanded LoRaWAN coverage to 3 major family islands (Abaco, Grand Bahama, Eleuthera).</li>
+                            <li>Developed the first IoT remote monitoring and control solution for electrical generators.</li>
+                        </ul>
+                    </div>
+                    <!-- Key Clients -->
+                    <div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3 border-l-4 border-blue-500 pl-3">Key Clients & Partners</h4>
+                        <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700">
+                            <li>Bahamas Power and Light (BPL)</li>
+                            <li>Nassau Cruise Port</li>
+                            <li>Arawak Port Development</li>
+                            <li>New Providence Water Development Co.</li>
+                            <li>Cable Bahamas</li>
+                            <li>McDonald's</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: GIS Program Modernization -->
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Project: GIS Program Modernization & Management (Bahamas Power & Light)</h3>
+                <p class="text-lg text-gray-700 mb-6">
+                    Led the strategic overhaul and ongoing management of the organization's GIS, migrating from legacy systems to a modern, cloud-based enterprise environment to support asset management, field operations, and engineering.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Key Initiatives -->
+                    <div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3 border-l-4 border-blue-500 pl-3">Key Initiatives & Developments</h4>
+                        <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700">
+                            <li>Migrated from ArcGIS Desktop to a cloud-based ArcGIS Pro database.</li>
+                            <li>Created BPL's first publicly accessed application: an Outage Management Tracker (Hurricane Matthew 2016).</li>
+                            <li>Executed extensive field data collection and database creation for New Providence, Eleuthera, Bimini, Exuma, and more.</li>
+                            <li>Standardized data by adding domain values and intuitive symbology.</li>
+                            <li>Provided continual database management, administration, and technical support for all end-users.</li>
+                        </ul>
+                    </div>
+                    <!-- Organizational Impact -->
+                    <div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3 border-l-4 border-blue-500 pl-3">Organizational Impact</h4>
+                        <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700">
+                            <li><strong>Asset Management:</strong> Enabled efficient locating and record-keeping for all BPL infrastructure.</li>
+                            <li><strong>Field Operations:</strong> Allowed teams to find assets with ease, measure cable runs from their desk, and simplify switching programs.</li>
+                            <li><strong>Engineering & Planning:</strong> Enabled load simulations to forecast future events, optimize generator/transformer placement, and manage load shedding.</li>
+                            <li><strong>Fleet Management:</strong>Provided the foundation to distribute teams effectively, reducing losses and customer downtime, especially during natural disasters.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="pt-16 -mt-16 mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">Professional Experience</h2>
+            <div class="space-y-8">
+                <!-- Job 1: GIS Manager -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900 border-l-4 border-blue-500 pl-3">Manager GIS Dept.</h3>
+                        <span class="text-gray-600 font-medium">2025 – Present</span>
+                    </div>
+                    <p class="text-lg text-gray-700 font-medium mb-4">Bahamas Power and Light</p>
+                    <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700">
+                        <li>Responsible for the overall health and functionality of the organization's GIS (hardware, software, data).</li>
+                        <li>Oversee collection, storage, and maintenance of GIS data, ensuring accuracy, quality, and security.</li>
+                        <li>Plan, execute, and monitor GIS projects, ensuring completion on time and within budget.</li>
+                        <li>Develop and implement GIS strategies aligned with organizational goals, including identifying new applications and trends.</li>
+                        <li>Manage GIS budget, personnel, and stakeholder communication across departments.</li>
+                    </ul>
+                </div>
+
+                <!-- Job 2: Draughtsman -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900 border-l-4 border-blue-500 pl-3">Draughtsman</h3>
+                        <span class="text-gray-600 font-medium">2012 – 2025</span>
+                    </div>
+                    <p class="text-lg text-gray-700 font-medium mb-4">Bahamas Power and Light</p>
+                    <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700">
+                        <li>Prepared schematic drawings of Transmission and Distribution systems (overhead, underground, switchgear, etc.).</li>
+                        <li>Prepared drawings for substation layouts, wayleaves, plinths, and buildings, including site surveys.</li>
+                        <li>Located and exposed underground cables for fault excavation and damage prevention.</li>
+                        <li>Created ArcGIS-based company geographic maps and detailed infrastructure layouts.</li>
+                        <li>Designed, built, and published electronic data collection systems for various applications.</li>
+                    </ul>
+                </div>
+
+                <!-- Job 3: Technical Assistant -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900 border-l-4 border-blue-500 pl-3">Technical Assistant</h3>
+                        <span class="text-gray-600 font-medium">2010 – 2012</span>
+                    </div>
+                    <p class="text-lg text-gray-700 font-medium mb-4">Department of Lands and Survey</p>
+                    <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700">
+                        <li>Provided network management, computer maintenance, and server maintenance.</li>
+                        <li>Delivered technical support for approximately 30 workstations.</li>
+                        <li>Managed software administration and preparation of Crown Land documents.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="education" class="pt-16 -mt-16 mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">Education & Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Education -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4 border-l-4 border-blue-500 pl-3">Education</h3>
+                    <div class="mb-4">
+                        <p class="text-lg font-medium text-gray-800">GIS and Remote Sensing Professional</p>
+                        <p class="text-gray-600">College of the Bahamas (November 2024)</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-lg font-medium text-gray-800">Associate of Science in Architecture</p>
+                        <p class="text-gray-600">College of the Bahamas (May 2010)</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-medium text-gray-800">High School Diploma</p>
+                        <p class="text-gray-600">C.R. Walker Senior High (June 2006)</p>
+                    </div>
+                </div>
+                <!-- Certifications -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4 border-l-4 border-blue-500 pl-3">Training & Certifications</h3>
+                    <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700 columns-1 sm:columns-2">
+                        <li>CompTIA A+ Certification</li>
+                        <li>IC3 Computer Literacy Certification</li>
+                        <li>Electrical Single Phase - Theory Exam</li>
+                        <li class="font-medium text-gray-800 mt-2 sm:col-span-2">Univ. of The Bahamas - GIS Professional:</li>
+                        <ul class="list-disc list-outside pl-5 space-y-1 mt-1 mb-2">
+                            <li>Fundamentals of GIS</li>
+                            <li>Introduction to Remote Sensing</li>
+                            <li>Hands-on AI in Remote Sensing</li>
+                            <li>Data Models, Mgmt & Maps</li>
+                            <li>Drone Photogrammetry</li>
+                            <li>Spatial Analysis Techniques</li>
+                        </ul>
+                        <li>Solving Spatial Problems Using ArcGIS</li>
+                        <li>Dynamic Image Processing in ArcGIS Pro</li>
+                        <li>Spatial Analysis with ArcGIS Online</li>
+                        <li>Exploring GIS Maps</li>
+                        <li>Streamline GIS Workflows (ArcGIS Pro)</li>
+                        <li>Configuring Enterprise Logins (ArcGIS)</li>
+                        <li>ArcGIS Online Administration Tasks</li>
+                        <li>Configuring an ArcGIS Online Org</li>
+                        <li>Preparing to Implement ArcGIS Online</li>
+                        <li>Labeling Features Using ArcGIS Pro</li>
+                        <li>Managing Map Layers in ArcGIS Pro</li>
+                        <li>Getting Started with ArcGIS Pro</li>
+                        <li class="font-medium text-gray-800 mt-2">(Pending) CWISA Certification</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-gray-500">
+            <p>&copy; 2025 Scottie Brown. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main page scripts -->
+    <script>
+        // This script runs after the DOM is parsed
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Simple Scroll-Spy Script
+            // This script can run on DOMContentLoaded because it only needs the HTML elements
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('#nav-menu a');
+
+            function changeNav() {
+                let index = sections.length;
+
+                while(--index && window.scrollY + 100 < sections[index].offsetTop) {}
+                
+                navLinks.forEach((link) => link.classList.remove('active'));
+                
+                // Find the corresponding link. Href might be just '#section'
+                const activeLink = document.querySelector(`#nav-menu a[href="#${sections[index].id}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+
+            changeNav();
+            window.addEventListener('scroll', changeNav);
+        });
+
+        // This script runs after all resources (including the lucide.js script) are fully loaded
+        window.onload = function() {
+            // Initialize Lucide icons
+            // We wait for window.onload to ensure the lucide object is defined
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            } else {
+                console.error('Lucide icons script did not load correctly.');
+            }
+        };
+    </script>
+
+</body>
+</html>
